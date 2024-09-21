@@ -1,0 +1,12 @@
+[package]
+name = "hotfix_demo"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["hotfix", "service"]
+
+[dependencies]
+service = { path = "service" }
+anyhow = "1.0.41"
+libloading = "0.8.5"
